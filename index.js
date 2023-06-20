@@ -21,11 +21,10 @@ app.listen(process.env.PORT, () => {
 app.use(express.json());
 
 /* Routes */
-app.use('/api/auth', require('./routes/auth'));
-
 // AUTH
-
+app.use('/api/auth', require('./routes/auth'));
 // CRUD Events
+app.use('/api/events', require('./routes/events'));
 
 
 
