@@ -103,7 +103,7 @@ const login = async(req, res = express.response) => {
         res.status(500).json({
             ok: false,
             msg: 'Please contact admin or support.'
-        })
+        });
     }
 };
 
